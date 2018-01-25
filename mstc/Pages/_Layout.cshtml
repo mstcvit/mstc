@@ -38,7 +38,7 @@
 
     <!-- Universal header -->
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
-    <main id="mainContent" data-grid="container">
+    <main id="mainContent">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -65,15 +65,20 @@
         <div class="body-content">
             @RenderBody()
             <hr />
-            <footer style="text-align:center">
-                <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
-            </footer>
         </div>
-
     </main>
 
+    <div data-grid="col-12" class="m-rich-content-block">
+        <footer style="text-align:center">
+            <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
+        </footer>
+    </div>
+>
 
-    
+
+
+
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
