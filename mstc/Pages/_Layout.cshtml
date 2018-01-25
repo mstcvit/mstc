@@ -32,7 +32,6 @@
     </environment>
 </head>
 <body>
-
     <!-- Accessibility requirement -->
     <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
 
@@ -40,32 +39,35 @@
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
     <main id="mainContent">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
+        <div class="m-immersive-hero">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
 
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a asp-page="/Index">Home</a></li>
+                            <li><a asp-page="/About">About</a></li>
+                            <li><a asp-page="/Contact">Contact</a></li>
+                        </ul>
+                        @await Html.PartialAsync("_LoginPartial")
+                    </div>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a asp-page="/Index">Home</a></li>
-                        <li><a asp-page="/About">About</a></li>
-                        <li><a asp-page="/Contact">Contact</a></li>
-                    </ul>
-                    @await Html.PartialAsync("_LoginPartial")
-                </div>
+            </nav>
+            <div class="body-content">
+                @RenderBody()
+                <hr />
             </div>
-        </nav>
-        <div class="body-content">
-            @RenderBody()
-            <hr />
         </div>
+
     </main>
 
     <div data-grid="col-12" class="m-rich-content-block">
@@ -73,7 +75,7 @@
             <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
         </footer>
     </div>
->
+    >
 
 
 
