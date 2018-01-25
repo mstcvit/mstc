@@ -1,9 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - mstc</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Microsoft Technical Community - Vellore">
+    <meta name="keywords" content="MSTC Vellore Microsoft">
+    <meta name="author" content="Pratik Khandelwal">
+    <!-- Meta additions -->
+    <!-- Stylesheet requirements -->
+    <!-- Visit the CDN documentation to learn about versions. -->
+    <link rel="stylesheet"
+          href="//assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.0/css/mwf-west-european-default.min.css">
+
+    <!-- Stylesheet additions -->
+    <!-- Include as a single optimized css file on CDN. -->
+    <!-- ... -->
+
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,35 +32,48 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
 
+    <!-- Accessibility requirement -->
+    <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
+
+    <!-- Universal header -->
+    <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
+    <main id="mainContent" data-grid="container">
+        <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-page="/Index">Home</a></li>
+                        <li><a asp-page="/About">About</a></li>
+                        <li><a asp-page="/Contact">Contact</a></li>
+                    </ul>
+                    @await Html.PartialAsync("_LoginPartial")
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
-            </div>
+        </nav>
+        <div class="body-content">
+            @RenderBody()
+            <hr />
+            <footer style="text-align:center">
+                <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
+            </footer>
         </div>
-    </nav>
-    <div class="body-content">
-        @RenderBody()
-        <hr />
-        <footer style="text-align:center">
-            <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
-        </footer>
-    </div>
+
+    </main>
+
+
+    
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -66,8 +94,19 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+
     </environment>
 
+    <!-- JavaScript requirements -->
+    <!-- Include before </body>. Use the script file based on preference (UMD, AMD, CommonJS, Auto, etc.) -->
+    <script async="async"
+            src="//assets.onestore.ms/cdnfiles/external/mwf/short/v1/latest/scripts/mwf-auto-init-main.var.min.js"></script>
+    <noscript></noscript>
+
+    <!-- JavaScript dependencies -->
+    <!-- ... -->
+    <!-- JavaScript additions -->
+    <!-- ... -->
     @RenderSection("Scripts", required: false)
 </body>
 </html>

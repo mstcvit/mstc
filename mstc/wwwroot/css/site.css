@@ -6,10 +6,7 @@ body {
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 50px;
-    margin-left: 50px;
+
 }
 
 /* Carousel */
