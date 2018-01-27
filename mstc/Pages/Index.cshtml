@@ -5,83 +5,83 @@
 }
 
 
-    <div class="c-carousel f-multi-slide" role="region" aria-label="Label">
-        <div class="c-sequence-indicator" role="tablist">
-            <button role="tab" aria-selected="true" aria-label="View default align top" aria-controls="default-align-top" title="default-align-top"></button>
-            <button role="tab" aria-selected="false" aria-label="View default align bottom" aria-controls="default-align-bottom" title="default-align-bottom"></button>
-            <button role="tab" aria-selected="false" aria-label="View no image align top" aria-controls="no-image-align-top" title="no-image-align-top"></button>
-            <button role="tab" aria-selected="false" aria-label="View no image align bottom" aria-controls="no-image-align-bottom" title="no-image-align-bottom"></button>
-        </div>
-        <button class="c-flipper f-previous f-large" aria-hidden="true" tabindex="-1"></button>
-        <button class="c-flipper f-next f-large" aria-hidden="true" tabindex="-1"></button>
-        <div itemscope itemtype="http://schema.org/ItemList">
-            <ul>
-                <li id="default-align-bottom" data-f-theme="light">
-                    <section class="m-immersive-hero-item theme-light f-align-bottom">
-                        @*<picture class="c-image">
-                        <source srcset="http://placehold.it/2400x1600" media="(min-width: 1779px)">
-                        <source srcset="http://placehold.it/1778x1185" media="(min-width:1400px)">
-                        <source srcset="http://placehold.it/1399x931" media="(min-width:1084px)">
-                        <source srcset="http://placehold.it/1083x1805" media="(min-width:768px)">
-                        <source srcset="http://placehold.it/768x1280" media="(min-width:540px)">
-                        <source srcset="http://placehold.it/539x898" media="(min-width:0)">
-                        <img srcset="http://placehold.it/1399x931" src="http://placehold.it/1399x931" alt="Microsoft Technical Community">
-                    </picture>*@
-                        <div>
-                            <picture class="c-image">
-                                <source srcset="~/images/logoms.png" media="(min-width: 1779px)">
-                                <source srcset="~/images/logoms.png" media="(min-width:1400px)">
-                                <source srcset="~/images/logoms.png" media="(min-width:1084px)">
-                                <source srcset="~/images/logoms.png" media="(min-width:768px)">
-                                <source srcset="~/images/logoms.png" media="(min-width:540px)">
-                                <source srcset="~/images/logoms.png" media="(min-width:0)">
-                                <img srcset="~/images/logoms.png" src="~/images/logoms.png" alt="Microsoft image">
-                            </picture>
-                            <div>
-                                <h1 class="c-heading">Microsoft Technical Community</h1>
-                                <p class="c-subheading">Microsoft Innovation Center</p>
-                                <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
-                                    <span>Know More</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </li>
-
-                <li id="default-align-bottom" data-f-theme="light">
-                    <section class="m-immersive-hero-item theme-light f-align-bottom">
-                        @*<picture class="c-image">
-                        <source srcset="~/images/holo.png" media="(min-width:1779px)">
-                        <source srcset="~/images/holo.png" media="(min-width:1084px)">
-                        <source srcset="~/images/holo.png" media="(min-width:768px)">
-                        <source srcset="~/images/holo.png" media="(min-width:540px)">
-                        <source srcset="~/images/holo.png" media="(min-width:0)">
-                        <img srcset="~/images/holo.png" src="~/images/holo.png" alt="Microsoft Technical Community">
-                    </picture>*@
-                        <div>
-                            <picture class="c-image">
-                                <source srcset="~/images/holo.png" media="(min-width:1779px)">
-                                <source srcset="~/images/holo.png" media="(min-width:1084px)">
-                                <source srcset="~/images/holo.png" media="(min-width:768px)">
-                                <source srcset="~/images/holo.png" media="(min-width:540px)">
-                                <source srcset="~/images/holo.png" media="(min-width:0)">
-                                <img srcset="~/images/holo.png" src="~/images/holo.png" alt="Microsoft Technical Community">
-                            </picture>
-                            <div>
-                                <h1 class="c-heading">
-                                    Have innovative ideas?
-                                </h1>
-                                <p class="c-subheading">Do projects with Microsoft Innovation Center</p>
-                                <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
-                                    <span>Project Proposal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </li>
-            </ul>
-        </div>
+<div class="c-carousel f-multi-slide f-auto-play" role="region" aria-label="Label">
+    <div class="c-sequence-indicator" role="tablist">
+        <button role="tab" aria-selected="true" aria-label="View default align top" aria-controls="default-align-top" title="default-align-top"></button>
+        <button role="tab" aria-selected="false" aria-label="View default align bottom" aria-controls="default-align-bottom" title="default-align-bottom"></button>
+        <button class="c-action-toggle c-glyph glyph-play f-toggle" data-toggled-label="Pause" data-toggled-glyph="glyph-pause" aria-label="Play" hidden="hidden"></button>
     </div>
+    <button class="c-flipper f-previous f-large" aria-hidden="true" tabindex="-1"></button>
+    <button class="c-flipper f-next f-large" aria-hidden="true" tabindex="-1"></button>
+    <div itemscope itemtype="http://schema.org/ItemList">
+        <ul>
+            <li id="default-align-bottom" data-f-theme="light">
+                <section class="m-immersive-hero-item theme-light f-align-bottom">
+                    <picture class="c-image">
+                            <source srcset="~/images/back.png" media="(min-width: 1779px)">
+                            <source srcset="~/images/back.png" media="(min-width:1400px)">
+                            <source srcset="~/images/back.png" media="(min-width:1084px)">
+                            <source srcset="~/images/back.png" media="(min-width:768px)">
+                            <source srcset="~/images/back.png" media="(min-width:540px)">
+                            <source srcset="~/images/back.png" media="(min-width:0)">
+                            <img srcset="~/images/back.png" src="~/images/back.png" alt="Microsoft Technical Community">
+                        </picture>
+                    <div>
+                        <picture class="c-image f-mask-80">
+                            <source srcset="~/images/logoms.png" media="(min-width: 1779px)">
+                            <source srcset="~/images/logoms.png" media="(min-width:1400px)">
+                            <source srcset="~/images/logoms.png" media="(min-width:1084px)">
+                            <source srcset="~/images/logoms.png" media="(min-width:768px)">
+                            <source srcset="~/images/logoms.png" media="(min-width:540px)">
+                            <source srcset="~/images/logoms.png" media="(min-width:0)">
+                            <img srcset="~/images/logoms.png" src="~/images/logoms.png" alt="Microsoft image">
+                        </picture>
+                        <div>
+                            <h1 class="c-heading">Microsoft Technical Community</h1>
+                            <p class="c-subheading">Microsoft Innovation Center</p>
+                            <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
+                                <span>Know More</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li id="default-align-bottom" data-f-theme="light">
+                <section class="m-immersive-hero-item theme-light f-align-bottom">
+                    <picture class="c-image">
+                        <source srcset="~/images/back.png" media="(min-width: 1779px)">
+                        <source srcset="~/images/back.png" media="(min-width:1400px)">
+                        <source srcset="~/images/back.png" media="(min-width:1084px)">
+                        <source srcset="~/images/back.png" media="(min-width:768px)">
+                        <source srcset="~/images/back.png" media="(min-width:540px)">
+                        <source srcset="~/images/back.png" media="(min-width:0)">
+                        <img srcset="~/images/back.png" src="~/images/back.png" alt="Microsoft Technical Community">
+                    </picture>
+                    <div>
+                        <picture class="c-image">
+                            <source srcset="~/images/holo.png" media="(min-width:1779px)">
+                            <source srcset="~/images/holo.png" media="(min-width:1084px)">
+                            <source srcset="~/images/holo.png" media="(min-width:768px)">
+                            <source srcset="~/images/holo.png" media="(min-width:540px)">
+                            <source srcset="~/images/holo.png" media="(min-width:0)">
+                            <img srcset="~/images/holo.png" src="~/images/holo.png" alt="Microsoft Technical Community">
+                        </picture>
+                        <div>
+                            <h1 class="c-heading">
+                                Have innovative ideas?
+                            </h1>
+                            <p class="c-subheading">Do projects with Microsoft Innovation Center</p>
+                            <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
+                                <span>Project Proposal</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 
@@ -176,7 +176,186 @@
     </div>
 </div>
 
+<br/>
+<!-- Banner -->
+
+@*<div data-grid="col-12" class="m-rich-heading f-image">
+    <picture class="c-image">
+        <source srcset="~/images/xbox.jpg" media="(min-width: 1779px)">
+        <source srcset="~/images/xbox.jpg" media="(min-width:1400px)">
+        <source srcset="~/images/xbox.jpg" media="(min-width:1084px)">
+        <source srcset="~/images/xbox.jpg" media="(min-width:768px)">
+        <source srcset="~/images/xbox.jpg" media="(min-width:540px)">
+        <source srcset="~/images/xbox.jpg" media="(min-width:0)">
+        <img srcset="~/images/xbox.jpg" src="~/images/xbox.jpg" alt="Placeholder with dark grey background">
+    </picture>
+    <div>
+        <h3 class="c-heading">Subscribe with Us</h3>
+        <p class="c-paragraph-3">We conduct several workshops bla bla bla somerandomtext  will come here </p>
+    </div>
+</div>*@
+
+
+
+<!-- Events -->
+
+
+
+<div data-grid="container">
+    <div data-grid="col-12" class="m-area-heading">
+        <h2 class="c-heading">Our Events</h2>
+        <p>Stay tuned with us for more exciting events ;)</p>
+    </div>
+
+    <section class="m-feature f-align-left f-set-ratio theme-light">
+        <picture>
+            <source srcset="~/images/languages.svg" media="(min-width: 1400px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 1084px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 768px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 540px)">
+            <source srcset="~/images/languages.svg" media="(min-width:0)">
+            <img srcset="~/images/languages.svg" src="~/images/languages.svg" style="margin-top:50px" alt="Getting Started">
+        </picture>
+        <div>
+            <strong class="c-badge f-small f-highlight">Free</strong>
+            <h2 class="c-heading">Getting Started with C# & .Net </h2>
+            <p class="c-paragraph">Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <a href="#" class="c-call-to-action c-glyph">
+                <span>Know More</span>
+            </a>
+        </div>
+    </section>
+
+    @*<div class="m-mosaic">
+        <div class="c-mosaic">
+            <div class="theme-light" data-f-mosaic="f-vp1-whole f-vp4-half f-height-large">
+                <section class="c-mosaic-placement f-background-neutral-90">
+                    <picture>
+                        <source srcset="~/images/Event1.png" media="(min-width:1779px)">
+                        <source srcset="~/images/Event1.png" media="(min-width:1400px)">
+                        <source srcset="~/images/Event1.png" media="(min-width:1084px)">
+                        <source srcset="~/images/Event1.png" media="(min-width:768px)">
+                        <source srcset="~/images/Event1.png" media="(min-width:540px)">
+                        <source srcset="~/images/Event1.png" media="(min-width:0)">
+                        <img srcset="~/images/Event1.png" src="~/images/Event1.png" alt="Placeholder with grey background and dimension watermark without any imagery">
+                    </picture>
+
+                </section>
+            </div>
+            <div data-f-mosaic="f-vp1-whole f-vp4-half ">
+                <div class="theme-dark" data-f-mosaic="f-vp1-whole f-height-medium ">
+                    <section class="c-mosaic-placement f-transparent f-align-bottom f-mask-60">
+                        <picture>
+                            <source srcset="~/images/me.jpg" media="(min-width:1779px)">
+                            <source srcset="~/images/me.jpg" media="(min-width:1400px)">
+                            <source srcset="~/images/me.jpg" media="(min-width:1084px)">
+                            <source srcset="~/images/me.jpg" media="(min-width:768px)">
+                            <source srcset="~/images/me.jpg" media="(min-width:540px)">
+                            <source srcset="~/images/me.jpg" media="(min-width:0)">
+                            <img srcset="~/images/me.jpg" src="~/images/me.jpg" alt="Placeholder with grey background and dimension watermark without any imagery" height="500">
+                        </picture>
+                        <div>
+                            <h3 class="c-heading">Speaker</h3>
+                            <p class="c-subheading">Pratik Khandelwal</p>
+                            <div>
+                                <a href="#" class="c-call-to-action c-glyph">
+                                    <span>Visit on LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="theme-dark" data-f-mosaic="f-vp1-whole f-vp2-half f-height-medium">
+                    <section class="c-mosaic-placement f-background-neutral-80 f-mask-30">
+                        <picture>
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:1779px)">
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:1400px)">
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:1084px)">
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:768px)">
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:540px)">
+                            <source srcset="~/images/sangeeth.jpg" media="(min-width:0)">
+                            <img srcset="~/images/sangeeth.jpg" src="~/images/sangeeth.jpg" alt="Placeholder with grey background and dimension watermark without any imagery" height="400">
+                        </picture>
+                        <div>
+                            <h3 class="c-heading">Co-Speaker</h3>
+                            <p class="c-subheading">Sangeeth Sudheer</p>
+                            <div>
+                                <a href="#" class="c-call-to-action c-glyph">
+                                    <span>Visit on LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="theme-light" data-f-mosaic="f-vp1-whole f-vp2-half f-height-medium">
+                    <section class="c-mosaic-placement f-background-neutral-75">
+                        <picture>
+                            <source srcset="http://placehold.it/425x425/464646/333333" media="(min-width:1779px)">
+                            <source srcset="http://placehold.it/400x400/464646/333333" media="(min-width:1400px)">
+                            <source srcset="http://placehold.it/350x400/464646/333333" media="(min-width:1084px)">
+                            <source srcset="http://placehold.it/542x400/464646/333333" media="(min-width:768px)">
+                            <source srcset="http://placehold.it/384x400/464646/333333" media="(min-width:540px)">
+                            <source srcset="http://placehold.it/540x300/464646/333333" media="(min-width:0)">
+                            <img srcset="http://placehold.it/540x300/464646/333333" src="http://placehold.it/540x300/464646/333333">
+                        </picture>
+                        <div>
+                            <h3 class="c-heading">Co-Speaker</h3>
+                            <p class="c-subheading">Ayush priya</p>
+                            <div>
+                                <a href="#" class="c-call-to-action c-glyph">
+                                    <span>Visit on LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>*@
+</div>
+
 
 <!--Contact Us-->
+
+<section data-grid="col-12" class="m-highlight-feature f-align-left" itemscope itemtype="https://schema.org/Product">
+    <picture class="c-image">
+        <source srcset="~/images/B2.jpg" media="(min-width: 1779px)">
+        <source srcset="~/images/B2.jpg" media="(min-width:1400px)">
+        <source srcset="~/images/B2.jpg" media="(min-width:1084px)">
+        <source srcset="~/images/B2.jpg" media="(min-width:768px)">
+        <source srcset="~/images/B2.jpg" media="(min-width:540px)">
+        <source srcset="~/images/B2.jpg" media="(min-width:0)">
+        <img srcset="~/images/B2.jpg" src="~/images/B2.jpg" alt="Placeholder with grey background and dimension watermark without any imagery">
+    </picture>
+    <div>
+        <h2 class="c-heading">Contact us</h2>
+
+        <div class="form">
+            <div id="errormessage"></div>
+
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" style="width: 300px;min-width:268px; max-width:250px; height:50px;min-height:50px;max-height:50px;" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+            </div>
+
+            <button name="button" type="submit" class="c-button f-primary">Submit</button>
+        </div>
+
+
+    </div>
+</section>
+
+
+
 
 
