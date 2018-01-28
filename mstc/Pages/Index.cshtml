@@ -4,20 +4,20 @@
     ViewData["Title"] = "Home page";
 }
 
-
-<div class="c-carousel f-multi-slide f-auto-play" role="region" aria-label="Label">
-    <div class="c-sequence-indicator" role="tablist">
-        <button role="tab" aria-selected="true" aria-label="View default align top" aria-controls="default-align-top" title="default-align-top"></button>
-        <button role="tab" aria-selected="false" aria-label="View default align bottom" aria-controls="default-align-bottom" title="default-align-bottom"></button>
-        <button class="c-action-toggle c-glyph glyph-play f-toggle" data-toggled-label="Pause" data-toggled-glyph="glyph-pause" aria-label="Play" hidden="hidden"></button>
-    </div>
-    <button class="c-flipper f-previous f-large" aria-hidden="true" tabindex="-1"></button>
-    <button class="c-flipper f-next f-large" aria-hidden="true" tabindex="-1"></button>
-    <div itemscope itemtype="http://schema.org/ItemList">
-        <ul>
-            <li id="default-align-bottom" data-f-theme="light">
-                <section class="m-immersive-hero-item theme-light f-align-bottom">
-                    <picture class="c-image">
+<div class="m-immersive-hero">
+    <div class="c-carousel f-multi-slide f-auto-play" role="region" aria-label="Label">
+        <div class="c-sequence-indicator" role="tablist">
+            <button role="tab" aria-selected="true" aria-label="View default align top" aria-controls="default-align-top" title="default-align-top"></button>
+            <button role="tab" aria-selected="false" aria-label="View default align bottom" aria-controls="default-align-bottom" title="default-align-bottom"></button>
+            <button class="c-action-toggle c-glyph glyph-play f-toggle" data-toggled-label="Pause" data-toggled-glyph="glyph-pause" aria-label="Play" hidden="hidden"></button>
+        </div>
+        <button class="c-flipper f-previous f-large" aria-hidden="true" tabindex="-1"></button>
+        <button class="c-flipper f-next f-large" aria-hidden="true" tabindex="-1"></button>
+        <div itemscope itemtype="http://schema.org/ItemList">
+            <ul>
+                <li id="default-align-bottom" data-f-theme="light">
+                    <section class="m-immersive-hero-item theme-light f-align-bottom">
+                        <picture class="c-image">
                             <source srcset="~/images/back.png" media="(min-width: 1779px)">
                             <source srcset="~/images/back.png" media="(min-width:1400px)">
                             <source srcset="~/images/back.png" media="(min-width:1084px)">
@@ -26,62 +26,65 @@
                             <source srcset="~/images/back.png" media="(min-width:0)">
                             <img srcset="~/images/back.png" src="~/images/back.png" alt="Microsoft Technical Community">
                         </picture>
-                    <div>
-                        <picture class="c-image f-mask-80">
-                            <source srcset="~/images/logoms.png" media="(min-width: 1779px)">
-                            <source srcset="~/images/logoms.png" media="(min-width:1400px)">
-                            <source srcset="~/images/logoms.png" media="(min-width:1084px)">
-                            <source srcset="~/images/logoms.png" media="(min-width:768px)">
-                            <source srcset="~/images/logoms.png" media="(min-width:540px)">
-                            <source srcset="~/images/logoms.png" media="(min-width:0)">
-                            <img srcset="~/images/logoms.png" src="~/images/logoms.png" alt="Microsoft image">
-                        </picture>
                         <div>
-                            <h1 class="c-heading">Microsoft Technical Community</h1>
-                            <p class="c-subheading">We welcome you to Innovation, the word & the act 🐱‍👤</p>
-                            <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
-                                <span>Know More</span>
-                            </a>
+                            <picture class="c-image f-mask-80">
+                                <source srcset="~/images/logoms.png" media="(min-width: 1779px)">
+                                <source srcset="~/images/logoms.png" media="(min-width:1400px)">
+                                <source srcset="~/images/logoms.png" media="(min-width:1084px)">
+                                <source srcset="~/images/logoms.png" media="(min-width:768px)">
+                                <source srcset="~/images/logoms.png" media="(min-width:540px)">
+                                <source srcset="~/images/logoms.png" media="(min-width:0)">
+                                <img srcset="~/images/logoms.png" src="~/images/logoms.png" alt="Microsoft image">
+                            </picture>
+                            <div>
+                                <h1 class="c-heading">Microsoft Technical Community</h1>
+                                <p class="c-subheading">We welcome you to Innovation, the word & the act 🐱‍👤</p>
+                                <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
+                                    <span>Know More</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </li>
+                    </section>
+                </li>
 
-            <li id="default-align-bottom" data-f-theme="light">
-                <section class="m-immersive-hero-item theme-light f-align-bottom">
-                    <picture class="c-image">
-                        <source srcset="~/images/back.png" media="(min-width: 1779px)">
-                        <source srcset="~/images/back.png" media="(min-width:1400px)">
-                        <source srcset="~/images/back.png" media="(min-width:1084px)">
-                        <source srcset="~/images/back.png" media="(min-width:768px)">
-                        <source srcset="~/images/back.png" media="(min-width:540px)">
-                        <source srcset="~/images/back.png" media="(min-width:0)">
-                        <img srcset="~/images/back.png" src="~/images/back.png" alt="Microsoft Technical Community">
-                    </picture>
-                    <div>
+                <li id="default-align-bottom" data-f-theme="light">
+                    <section class="m-immersive-hero-item theme-light f-align-bottom">
                         <picture class="c-image">
-                            <source srcset="~/images/holo.png" media="(min-width:1779px)">
-                            <source srcset="~/images/holo.png" media="(min-width:1084px)">
-                            <source srcset="~/images/holo.png" media="(min-width:768px)">
-                            <source srcset="~/images/holo.png" media="(min-width:540px)">
-                            <source srcset="~/images/holo.png" media="(min-width:0)">
-                            <img srcset="~/images/holo.png" src="~/images/holo.png" alt="Microsoft Technical Community">
+                            <source srcset="~/images/back.png" media="(min-width: 1779px)">
+                            <source srcset="~/images/back.png" media="(min-width:1400px)">
+                            <source srcset="~/images/back.png" media="(min-width:1084px)">
+                            <source srcset="~/images/back.png" media="(min-width:768px)">
+                            <source srcset="~/images/back.png" media="(min-width:540px)">
+                            <source srcset="~/images/back.png" media="(min-width:0)">
+                            <img srcset="~/images/back.png" src="~/images/back.png" alt="Microsoft Technical Community">
                         </picture>
                         <div>
-                            <h1 class="c-heading">
-                                Have innovative ideas?
-                            </h1>
-                            <p class="c-subheading">Do projects with Microsoft Innovation Center</p>
-                            <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
-                                <span>Project Proposal</span>
-                            </a>
+                            <picture class="c-image">
+                                <source srcset="~/images/holo.png" media="(min-width:1779px)">
+                                <source srcset="~/images/holo.png" media="(min-width:1084px)">
+                                <source srcset="~/images/holo.png" media="(min-width:768px)">
+                                <source srcset="~/images/holo.png" media="(min-width:540px)">
+                                <source srcset="~/images/holo.png" media="(min-width:0)">
+                                <img srcset="~/images/holo.png" src="~/images/holo.png" alt="Microsoft Technical Community">
+                            </picture>
+                            <div>
+                                <h1 class="c-heading">
+                                    Have innovative ideas?
+                                </h1>
+                                <p class="c-subheading">Do projects with Microsoft Innovation Center</p>
+                                <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
+                                    <span>Project Proposal</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </li>
-        </ul>
+                    </section>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
+
+
 
 
 
@@ -90,7 +93,7 @@
 <div id="Team">
     <div data-grid="col-12" class="m-area-heading">
         <h2 class="c-heading">Our Team</h2>
-        <p>The heart of out Community</p>
+        <p>The heart of our Community</p>
     </div>
 
     <div data-grid="col-4" class="m-rich-content-block">
@@ -167,7 +170,7 @@
         <div class="m-persona-2">
             <div>
                 <picture role="img" aria-label="Microsoft profile picture">
-                    <img class="c-image f-round" src="~/images/Board/pratik.jpg" alt="Microsoft profile picture" id="personaSize1">
+                    <img class="c-image f-round" src="~/images/Board/anuranjan.jpg" alt="Microsoft profile picture" id="personaSize1">
                 </picture>
             </div>
             <div>
@@ -191,52 +194,58 @@
         </div>
     </div>
 </div>
-<br/>
+<br />
 <!-- Banner -->
-
 @*<div data-grid="col-12" class="m-rich-heading f-image">
-    <picture class="c-image">
-        <source srcset="~/images/xbox.jpg" media="(min-width: 1779px)">
-        <source srcset="~/images/xbox.jpg" media="(min-width:1400px)">
-        <source srcset="~/images/xbox.jpg" media="(min-width:1084px)">
-        <source srcset="~/images/xbox.jpg" media="(min-width:768px)">
-        <source srcset="~/images/xbox.jpg" media="(min-width:540px)">
-        <source srcset="~/images/xbox.jpg" media="(min-width:0)">
-        <img srcset="~/images/xbox.jpg" src="~/images/xbox.jpg" alt="Placeholder with dark grey background">
-    </picture>
-    <div>
-        <h3 class="c-heading">Subscribe with Us</h3>
-        <p class="c-paragraph-3">We conduct several workshops bla bla bla somerandomtext  will come here </p>
-    </div>
-</div>*@
+        <picture class="c-image">
+            <source srcset="~/images/xbox.jpg" media="(min-width: 1779px)">
+            <source srcset="~/images/xbox.jpg" media="(min-width:1400px)">
+            <source srcset="~/images/xbox.jpg" media="(min-width:1084px)">
+            <source srcset="~/images/xbox.jpg" media="(min-width:768px)">
+            <source srcset="~/images/xbox.jpg" media="(min-width:540px)">
+            <source srcset="~/images/xbox.jpg" media="(min-width:0)">
+            <img srcset="~/images/xbox.jpg" src="~/images/xbox.jpg" alt="Placeholder with dark grey background">
+        </picture>
+        <div>
+            <h3 class="c-heading">Subscribe with Us</h3>
+            <p class="c-paragraph-3">We conduct several workshops bla bla bla somerandomtext  will come here </p>
+        </div>
+    </div>*@
 
 
 
 <!-- Events -->
-<div data-grid="container" >
-        <div data-grid="col-12" class="m-area-heading" id="Events">
-            <h2 class="c-heading">Our Events</h2>
-            <p>Stay tuned with us for more exciting events ;)</p>
-        </div>
+<div data-grid="container">
+    <div data-grid="col-12" class="m-area-heading" id="Events">
+        <h2 class="c-heading">Our Events</h2>
+        <p>Stay tuned with us for more exciting events ;)</p>
+    </div>
 
-        <section class="m-feature f-align-left f-set-ratio theme-light">
-            <picture>
-                <source srcset="~/images/languages.svg" media="(min-width: 1400px)">
-                <source srcset="~/images/languages.svg" media="(min-width: 1084px)">
-                <source srcset="~/images/languages.svg" media="(min-width: 768px)">
-                <source srcset="~/images/languages.svg" media="(min-width: 540px)">
-                <source srcset="~/images/languages.svg" media="(min-width:0)">
-                <img srcset="~/images/languages.svg" src="~/images/languages.svg" style="margin-top:50px" alt="Getting Started">
-            </picture>
-            <div>
-                <strong class="c-badge f-small f-highlight">Free</strong>
-                <h2 class="c-heading">Getting Started with C# & .Net </h2>
-                <p class="c-paragraph">Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <a href="#" class="c-call-to-action c-glyph">
-                    <span>Know More</span>
-                </a>
-            </div>
-        </section>
+    <section class="m-feature f-align-left f-set-ratio theme-light">
+        <picture>
+            <source srcset="~/images/languages.svg" media="(min-width: 1400px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 1084px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 768px)">
+            <source srcset="~/images/languages.svg" media="(min-width: 540px)">
+            <source srcset="~/images/languages.svg" media="(min-width:0)">
+            <img srcset="~/images/languages.svg" src="~/images/languages.svg" style="margin-top:50px" alt="Getting Started">
+        </picture>
+        <div>
+            <strong class="c-badge f-small f-highlight">Free Workshop</strong>
+            <h2 class="c-heading">Getting Started with C# & .Net </h2>
+            <p class="c-paragraph">
+                Are you still wondering which programming language to stick to? 🤔 <br />
+                Are you still unsure about which platform you should be working on? 😞 <br />
+                Do you want to see what the future has in store for you? 🤩 <br /><br />
+
+                Then look nowhere else and attend our FREE session giving you a bird's-eye-view of the Microsoft stack powered by Visual Studio and C#.<br />
+                Also, you get a peek at the Quantum Computing future that's going to revolutionize the world in the coming years.
+            </p>
+            <a href="http://bit.ly/2qYRkAG" target="_blank" class="c-call-to-action c-glyph">
+                <span>Subscribe with us</span>
+            </a>
+        </div>
+    </section>
 </div>
 
 

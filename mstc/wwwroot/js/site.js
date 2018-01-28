@@ -23,3 +23,19 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+// Navbar- Scroll Behavior
+$(document).ready(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 150) {
+            $(".navbar-inverse").css("background", "#e6e6e6");
+            $(".navbar-inverse").css("border-color", "#e6e6e6");
+        }
+
+        else {
+            $(".navbar-inverse").css("background", "transparent");
+            $(".navbar-inverse").css("border-color", "transparent");
+        }
+    })
+})

@@ -9,13 +9,14 @@
     <meta name="description" content="Microsoft Technical Community - Vellore">
     <meta name="keywords" content="MSTC Vellore Microsoft">
     <meta name="author" content="Pratik Khandelwal">
+    <link rel="shortcut icon"type="image/x-icon" href="~/favicon.ico" />
     <!-- Meta additions -->
     <!-- Stylesheet requirements -->
     <!-- Visit the CDN documentation to learn about versions. -->
     <link rel="stylesheet"
           href="//assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.0/css/mwf-west-european-default.min.css">
 
-    <script src="http://getmwf.com/local/scripts/app.js" async=""></script>
+    <script src="http://getmwf.com/local/scripts/app.js" async="http://getmwf.com/local/scripts/app.js"></script>
 
     <!-- Stylesheet additions -->
     <!-- Include as a single optimized css file on CDN. -->
@@ -35,49 +36,42 @@
 </head>
 <body>
     <!-- Accessibility requirement -->
-    <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
-
     <!-- Universal header -->
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#mainContent">Home</a></li>
+                    <li><a href="#Team">Team</a></li>
+                    <li><a href="#Events">Events</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                @*@await Html.PartialAsync("_LoginPartial")*@
+            </div>
+
+        </div>
+    </nav>
     <main id="mainContent">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
-        <div class="m-immersive-hero">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
-
-                    </div>
-
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#mainContent">Home</a></li>
-                            <li><a href="#Team">Team</a></li>
-                            <li><a href="#Events">Events</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </ul>
-                        @*@await Html.PartialAsync("_LoginPartial")*@
-                    </div>
-
-                </div>
-            </nav>
-            <div class="body-content">
-                @RenderBody()
-                <hr />
-            </div>
-        </div>
-
+        @RenderBody()
     </main>
+
 
     <div data-grid="col-12" class="m-rich-content-block">
         <footer style="text-align:center">
-            <p>&copy; 2017 - Microsoft Technical Community - Vellore</p>
+            <p>&copy; 2018 - Microsoft Technical Community - Vellore</p>
         </footer>
     </div>
     >
