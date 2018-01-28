@@ -54,14 +54,17 @@
                         <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
 
                     </div>
+
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a asp-page="/Index">Home</a></li>
-                            <li><a asp-page="/About">About</a></li>
-                            <li><a asp-page="/Contact">Contact</a></li>
+                            <li><a href="#mainContent">Home</a></li>
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#Events">Events</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
-                        @await Html.PartialAsync("_LoginPartial")
+                        @*@await Html.PartialAsync("_LoginPartial")*@
                     </div>
+
                 </div>
             </nav>
             <div class="body-content">
