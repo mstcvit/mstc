@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewData["Title"] - mstc</title>
+    <title>@ViewData["Title"] - MSTC Vellore</title>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -30,50 +30,46 @@
     <!-- Universal header -->
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-page="/Index" class="navbar-left"><img src="~/images/msft.png" height="50" /></a>
+
+                </div>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#mainContent">Home</a></li>
+                        <li><a href="#Team">Team</a></li>
+                        <li><a href="#Events">Events</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
 
             </div>
+        </nav>
 
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#mainContent">Home</a></li>
-                    <li><a href="#Team">Team</a></li>
-                    <li><a href="#Events">Events</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
 
-        </div>
-    </nav>
     <main id="mainContent">
+
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
         @RenderBody()
     </main>
 
-
+    <hr />
     <div data-grid="col-12" class="m-rich-content-block">
         <footer style="text-align:center">
             <p>&copy; 2018 - Microsoft Technical Community - Vellore</p>
         </footer>
     </div>
-    >
-
-
-
-
-
-
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     <!-- JavaScript requirements -->
     <!-- Include before </body>. Use the script file based on preference (UMD, AMD, CommonJS, Auto, etc.) -->
