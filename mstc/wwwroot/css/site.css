@@ -31,3 +31,8 @@ body {
         display: none;
     }
 }
+
+.navbar-collapse.collapse.in,
+.navbar-collapse.collapsing {
+    background: #e6e6e6;
+}

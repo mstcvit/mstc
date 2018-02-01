@@ -363,23 +363,25 @@
             <source srcset="~/images/B2.jpg" media="(min-width:0)">
             <img srcset="~/images/B2.jpg" src="~/images/B2.jpg" alt="Placeholder with grey background and dimension watermark without any imagery">
         </picture>
+
         <div>
             <h2 class="c-heading">Contact us</h2>
 
-            <div class="form">
-                <div id="errormessage"></div>
+            <div class="form" method="POST">
+
+                <div asp-validation-summary="All"></div>
 
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input asp-for="Contact.Name" type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input asp-for="Contact.Email" type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control" style="width: 300px;min-width:268px; max-width:250px; height:50px;min-height:50px;max-height:50px;" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <textarea asp-for="Contact.Message" class="form-control" style="width: 300px;min-width:268px; max-width:250px; height:50px;min-height:50px;max-height:50px;" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                     <div class="validation"></div>
                 </div>
 

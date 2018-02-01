@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 // Navbar- Scroll Behavior
 $(document).ready(function () {
-    $(window).scroll(function () {
+    function onScroll() {
         var scroll = $(window).scrollTop();
         if (scroll > 50) {
             $(".navbar-inverse").css("background", "#e6e6e6");
@@ -37,5 +37,9 @@ $(document).ready(function () {
             $(".navbar-inverse").css("background", "transparent");
             $(".navbar-inverse").css("border-color", "transparent");
         }
-    })
+    }
+
+    $(window).scroll(onScroll);
+
+    onScroll();
 })
