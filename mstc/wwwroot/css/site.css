@@ -32,7 +32,24 @@ body {
     }
 }
 
-.navbar-collapse.collapse.in,
-.navbar-collapse.collapsing {
-    background: #e6e6e6;
+#mstcfooter{
+    background-color: black !important;
+    height: 120px !important;
+    padding: 30px 35px 30px 30px !important;
+    margin-bottom: 0px !important;
+}
+
+.footerform{
+    background-color:black !important;
+    margin-top:5px;
+}
+
+#mainbartop{
+    background-color:transparent;
+}
+
+#section1{
+    color:antiquewhite;
+    text-align:center;
+    height: 80vh;
 }
