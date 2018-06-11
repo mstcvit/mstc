@@ -1,7 +1,3 @@
-body {
-    padding-bottom: 20px;   
-}
-
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
@@ -34,8 +30,8 @@ body {
 
 #mstcfooter{
     background-color: black !important;
-    height: 120px !important;
-    padding: 30px 35px 30px 30px !important;
+    height: 140px !important;
+    padding: 20px 25px 20px 20px !important;
     margin-bottom: 0px !important;
 }
 
@@ -51,5 +47,20 @@ body {
 #section1{
     color:antiquewhite;
     text-align:center;
-    height: 80vh;
+    height: 60vh;
+    font-size: 3.5em;
+}
+
+#aboutus{
+    background-color: #eeeede;
+    color: #303030;
+    height: 50vh;
+    padding: 2% 4% 2% 4%;
+    width: 100%;
+}
+
+.heading{
+    font-size: 2.2em;
+    text-align: center;
+    margin-left: 43%;
 }
