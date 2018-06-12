@@ -51,12 +51,10 @@
     font-size: 3.5em;
 }
 
-#aboutus{
+.light-section{
     background-color: #eeeede;
     color: #303030;
-    height: 50vh;
     padding: 2% 4% 2% 4%;
-    width: 100%;
 }
 
 .heading{
@@ -73,11 +71,11 @@
 .blackbar{
     font-size: 1.5em;
     color: antiquewhite;
-    margin-top:12px;
+    margin-top:1em;
+    margin-bottom: 1em;
 }
 
 #barbtn{
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-
