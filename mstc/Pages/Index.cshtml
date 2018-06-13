@@ -88,38 +88,20 @@
     <div class="row">
         <div class="col-11">
             <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="https://dummyimage.com/250x250/000/fff" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HEADING</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga dolor delectus repellendus eligendi reprehenderit aliquam pariatur quae hic.</p>
-                        <p class="card-text"><small class="text-muted">Last updated on 10-Jun</small></p>`
+                
+                <!--Will use fetched data here instead of for-loop in prod-->
+                <!--Can also create a similar data template for teams section which gets data from a View-Model-->
+                @for (int i = 0; i < 5; i++)
+                {
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/250x250/000/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">HEADING</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga dolor delectus repellendus eligendi reprehenderit aliquam pariatur quae hic.</p>
+                            <p class="card-text"><small class="text-muted">Last updated on 10-Jun</small></p>`
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://dummyimage.com/250x250/000/fff" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HEADING</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga dolor delectus repellendus eligendi reprehenderit aliquam pariatur quae hic.</p>
-                        <p class="card-text"><small class="text-muted">Last updated on 10-Jun</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://dummyimage.com/250x250/000/fff" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HEADING</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga dolor delectus repellendus eligendi reprehenderit aliquam pariatur quae hic.</p>
-                        <p class="card-text"><small class="text-muted">Last updated on 10-Jun</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://dummyimage.com/250x250/000/aaa" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HEADING</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga dolor delectus repellendus eligendi reprehenderit aliquam pariatur quae hic.</p>
-                        <p class="card-text"><small class="text-muted">Last updatesd on 10-Jun</small></p>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </div>
