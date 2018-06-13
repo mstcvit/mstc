@@ -28,16 +28,38 @@
     }
 }
 
-#mstcfooter{
-    background-color: black !important;
-    height: 140px !important;
-    padding: 20px 25px 20px 20px !important;
-    margin-bottom: 0px !important;
+
+/* General Css*/
+
+.light-section {
+    background-color: #eeeede;
+    color: #303030;
+    padding: 2% 4% 2% 4%;
 }
 
+.heading {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.heading-inverse {
+    font-size: 2.2em;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/*Section Wise*/
+
+
+/*Footer*/
 .footerform{
     background-color:black !important;
     margin-top:5px;
+}
+.footer-text{
+    color:antiquewhite;
+    font-size:1.2em;
+    text-align:center;
 }
 
 #mainbartop{
@@ -51,23 +73,6 @@
     font-size: 3.5em;
 }
 
-.light-section{
-    background-color: #eeeede;
-    color: #303030;
-    padding: 2% 4% 2% 4%;
-}
-    
-.heading{
-    font-size: 2.2em;
-    text-align: center;
-}
-
-.heading-inverse {
-    font-size: 2.2em;
-    text-align: center;
-    color: antiquewhite;
-}
-
 .blackbar{
     font-size: 1.5em;
     color: antiquewhite;
@@ -78,4 +83,23 @@
 #barbtn{
     padding-left: 1.5em;
     padding-right: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#blogbtn{
+    margin-top: 1em;
+}
+
+
+/*Media queries*/
+@media screen and (max-width: 950px) {
+    #barbtn {
+        margin-left: 30%;
+        margin-top: 0.2em;
+    }
+    .blackbar{
+        padding-left:1em;
+        text-align:center;
+    }
 }
