@@ -62,6 +62,11 @@
     text-align:center;
 }
 
+input #emailid{
+    background-color: transparent !important;
+    color:antiquewhite;
+}
+
 #mainbartop{
     background-color:transparent;
 }
