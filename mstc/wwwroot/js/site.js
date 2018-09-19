@@ -1,50 +1,34 @@
-﻿// Write your Javascript code.
-//$(document).ready(function () {
-//    // Add smooth scrolling to all links
-//    $("a").on('click', function (event) {
+﻿sr.reveal('.foo', { duration: 2000, delay: 500 });
+sr.reveal('.bar', { duration: 2000, delay: 500 });
 
-//        // Make sure this.hash has a value before overriding default behavior
-//        if (this.hash !== "") {
-//            // Prevent default anchor click behavior
-//            event.preventDefault();
+$(document).ready(function(){
+        $('.your-class').slick({
+            setting-name: setting-value
+  });
+});
 
-//            // Store hash
-//            var hash = this.hash;
-
-//            // Using jQuery's animate() method to add smooth page scroll
-//            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-//            $('html, body').animate({
-//                scrollTop: $(hash).offset().top
-//            }, 800, function () {
-
-//                // Add hash (#) to URL when done scrolling (default click behavior)
-//                window.location.hash = hash;
-//            });
-//        } // End if
-//    });
-//});
-
-// Navbar- Scroll Behavior
-//$(document).ready(function () {
-//    function onScroll() {
-//        var scroll = $(window).scrollTop();
-//        if (scroll > 50) {
-//            $(".navbar-inverse").css("background", "#e6e6e6");
-//            $(".navbar-inverse").css("border-color", "#e6e6e6");
-//        }
-
-//        else {
-//            $(".navbar-inverse").css("background", "transparent");
-//            $(".navbar-inverse").css("border-color", "transparent");
-//        }
-//    }
-
-//    $(window).scroll(onScroll);
-
-//    onScroll();
-//})
-
-//scrollreveal
-
-sr.reveal('.foo', { duration: 1000, delay: 200 });
-sr.reveal('.bar', { duration: 1000, delay: 200 });
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});

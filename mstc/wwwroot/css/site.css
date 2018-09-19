@@ -15,10 +15,6 @@
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
@@ -28,8 +24,13 @@
     }
 }
 
-
+/*Tunnz edits*/
 /* General Css*/
+
+.light-content{
+    color: white;
+    margin-left: 5%;
+}
 
 .light-section {
     background-color: #eeeede;
@@ -40,6 +41,7 @@
 .heading {
     font-size: 2.2em;
     text-align: center;
+    color: antiquewhite;
 }
 
 .heading-inverse {
@@ -52,30 +54,19 @@
 
 
 /*Footer*/
-.footerform{
-    background-color:black !important;
-    margin-top:5px;
-}
-.footer-text{
-    color:antiquewhite;
-    font-size:1.2em;
-    text-align:center;
-}
-
-input #emailid{
-    background-color: transparent !important;
-    color:antiquewhite;
-}
-
-#mainbartop{
-    background-color:transparent;
+footer_center{
+    text-align: center;
 }
 
 #section1{
     color:antiquewhite;
     text-align:center;
-    height: 60vh;
+    height: 80vh;
     font-size: 3.5em;
+}
+
+#section2{
+    margin-top: 10vh;
 }
 
 .blackbar{

@@ -3,7 +3,8 @@
     max-width: 1500px;
     height: 500px;
     overflow: hidden;
-    margin: 50px auto;
+    margin-top:10px;
+    margin-bottom:-16px;
 }
 
     .accordion ul {
@@ -18,7 +19,7 @@
             display: table-cell;
             vertical-align: bottom;
             position: relative;
-            width: 16.666%;
+            width: 6.666%;
             height: 500px;
             background-repeat: no-repeat;
             background-position: center center;
@@ -78,27 +79,27 @@
                     }
 
             .accordion ul li:nth-child(1) {
-                background-image: url("https://unsplash.it/900/500?random");
+                background-image: url("https://picsum.photos/1000/500/?image=69");
             }
 
             .accordion ul li:nth-child(2) {
-                background-image: url("https://unsplash.it/900/500?random");
+                background-image: url("https://picsum.photos/1000/500/?image=469");
             }
 
             .accordion ul li:nth-child(3) {
-                background-image: url("https://unsplash.it/900/500?random");
+                background-image: url("https://picsum.photos/1000/500/?image=169");
             }
 
             .accordion ul li:nth-child(4) {
-                background-image: url("https://unsplash.it/900/500?random");
+                background-image: url("https://picsum.photos/600/500/?image=669");
             }
 
         .accordion ul:hover li {
-            width: 10%;
+            width: 8%;
         }
 
             .accordion ul:hover li:hover {
-                width: 65%;
+                width: 80%;
             }
 
                 .accordion ul:hover li:hover a {
