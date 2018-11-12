@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/accordian.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- Include as a single optimized css file on CDN. -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -30,34 +30,37 @@
     </script>
 
 </head>
-<body style="background-color:#303030;">
+<body style="background-color: #666666;">
     <!-- Accessibility requirement -->
     <!-- Universal header -->
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="mainbartop">
         <a class="navbar-brand" href="#">
-            <img src="~/images/msft.png" height="50px" />
+            <img src="~/images/mstc_white.png" height=40px style="margin-left: 10%" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item navigator">
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                <li class="nav-item navigator">
+                    <a class="nav-link" href="#">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                <li class="nav-item navigator">
+                    <a class="nav-link" href="#">What We Do</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                <li class="nav-item navigator">
+                    <a class="nav-link" href="#">Our Team</a>
+                </li>
+                <li class="nav-item navigator">
+                    <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
-            <ul class="navbar-nav" style="margin-left:65%;">
+            <ul class="navbar-nav submit-project">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><b>Submit a Project</b></a>
                 </li>
@@ -71,27 +74,47 @@
         @RenderBody()
     </main>
 
-    <hr />
     @*footer*@
-    <div class="container-fluid" style="background-color:black;">
-        <div class="row">
-            <div class="footer_center">
-                <h2 class="heading">That's it for today</h2>
-                <a href="#">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-github"></i>
-                </a>
+    <footer>
+        <div class="container-fluid footer-section">
+            <div class="row">
+                <div class="col-sm-4 border-right text-center">
+                    <img src="~/images/mstc_white.png" class="img-fluid align-middle footer-logo" />
+                </div>
+                <div class="col-sm-4 text-center socia-ico border-right">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <ul style="margin-top: 15%;">
+                        <li><i class="fab fa-github-square"></i></li>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                    </ul>
+                    <ul>
+                        <li style="font-size: 0.88em; color:white;"><i>@@mstcvit</i></li>
+                        <li style="font-size: 0.88em; color:white;"><i>@@micvitvellore</i></li>
+                        <li style="font-size: 0.88em; color:white;"><i>@@mstcvit</i></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <div class="padkid">
+                        <form id="form" class="topBefore">
+                            <input id="name" type="text" placeholder="NAME">
+                            <input id="email" type="text" placeholder="E-MAIL">
+                            <textarea id="message" placeholder="MESSAGE"></textarea>
+                            <input id="submit" type="submit" value="Send!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center light-content">
+                    <p>&copy;2018 - Microsoft Student Technical Commuinty - VIT Vellore</p>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+
+
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

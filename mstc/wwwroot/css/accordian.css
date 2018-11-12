@@ -79,19 +79,23 @@
                     }
 
             .accordion ul li:nth-child(1) {
-                background-image: url("https://picsum.photos/1000/500/?image=69");
+                background-image: url('../images/custom – 1.png');
+                background-size: cover;
             }
 
             .accordion ul li:nth-child(2) {
-                background-image: url("https://picsum.photos/1000/500/?image=469");
+                background-image: url('../images/custom – 2.png');
+                background-size: cover;
             }
 
             .accordion ul li:nth-child(3) {
-                background-image: url("https://picsum.photos/1000/500/?image=169");
+                background-image: url('../images/custom – 3.png');
+                background-size: cover;
             }
 
             .accordion ul li:nth-child(4) {
-                background-image: url("https://picsum.photos/600/500/?image=669");
+                background-image: url('../images/custom – 4.png');
+                background-size: cover;
             }
 
         .accordion ul:hover li {
@@ -112,7 +116,7 @@
                         transform: translateX(0);
                     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     body {
         margin: 0;

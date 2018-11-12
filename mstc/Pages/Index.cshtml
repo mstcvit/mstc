@@ -3,52 +3,45 @@
     ViewData["Title"] = "Home page";
 }
 
-
 <div class="container-fluid">
     <!--Landing Page-->
     <div class="row fullsection" id="section1">
-        <div class="col-12 align-self-end foo">
-            <p class="text-center">Microsoft</p>
-        </div>
-        <div class="col-12 align-self-center foo">
-            <p class="text-center">Student Technical Community</p>
-        </div>
-        <div class="col-12 foo">
-            <p class="text-center">VIT VELLORE</p>
-        </div>
+        <div id="sexy-tagline" class="animate rollIn">We welcome you to Innovate</div>
     </div>
     <!--About US-->
-    <div class="row bar" id="section2">
-        <div class="col-12">
-            <div class="row" style="height: 50vh;">
-                <div class="col-lg-8 col-xl-8">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="text-center heading">
-                                ABOUT US
-                            </p>
+    <div class="container-fluid padman">
+        <div class="row bar" id="section2">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-justify heading">
+                                    ABOUT US
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="text-justify light-content" style="font-size:1.3em;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </article>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <article class="text-justify light-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </article>
-                        </div>
+                    <div class="offset-lg-1 col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="https://dummyimage.com/250x250/000/fff" />
                     </div>
                 </div>
-                <div class="offset-lg-1 col-lg-3 d-none d-lg-block d-xl-block">
-                    <img src="https://dummyimage.com/250x250/000/fff" />
-                </div>
-            </div>  
+            </div>
         </div>
     </div>
     <!--Our Events-->
-    <div class="container-fluid" id="ourevents">
+    <div class="container-fluid padman" id="ourevents">
         <div class="row bar">
             <div class="col-12">
-                <p class="text-center heading-inverse">
-                    OUR EVENTS
+                <p class="heading">
+                    What We Do
                 </p>
             </div>
             <!-- crazyaccordian -->
@@ -58,33 +51,22 @@
                         <ul>
                             <li>
                                 <div>
-                                    <a href="#">
-                                        <h2>Title 1</h2>
-                                        <p>Description 1</p>
-                                    </a>
+                                    <a href="#"></a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="#">
-                                        <h2>Title 2</h2>
-                                        <p>Description 2</p>
-                                    </a>
+                                    <a href="#"></a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="#">
-                                        <h2>Title 3</h2>
-                                        <p>Description 3</p>
-                                    </a>
+                                    <a href="#"></a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="#">
-                                        <h2>Title 4</h2>
-                                        <p>Description 4</p>
+                                    <a href="#"></h2>
                                     </a>
                                 </div>
                             </li>
@@ -105,43 +87,45 @@
         </div>
     </div>
     <!--Our Team-->
-    <div class="row bar" style="height:80vh; margin-top: 5vh">
-        <div class="col-12 heading">
-            <p class="text-center">OUR TEAM</p>
-        </div>
-        <div class="offset-lg-2 col-lg-8">
-            <div class="your-class">
-                <div class="center">your content</div>
-                <div class="center">your content</div>
-                <div class="center">your content</div>
+    <div class="row bar">
+        <div class="container-fluid padman">
+            <div class="row">
+                <div class="col-12 text-center ">
+                    <h1 class="heading">Our Team</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
+                <div class="col-md-4 col-6 text-center spaces">
+                    <img src="~/images/image.png" class="img-fluid rounded profpic">
+                    <div class="label1 light-content">Name Goes Here</div>
+                    <p class="label2 light-content font-italic">Community Head</p>
+                </div>
             </div>
         </div>
     </div>
-    <!--Our Blog
-    <div class="row bar">
-        <div class="col-12">
-            <p class="text-center heading-inverse">
-                OUR BLOG
-            </p>
-        </div>
-    </div>
-    <div class="row bar">
-
-        <div class="card-deck">
-
-            Will use fetched data here instead of for-loop in prod
-            Can also create a similar data template for teams section which gets data from a View-Model
-            for (int i = 0; i < 4; i++)
-            {
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <div class="card">
-                        <img class="card-img-top img-fluid" src="https://dummyimage.com/250x250/000/fff">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>-->
 </div>

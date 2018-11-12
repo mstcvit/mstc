@@ -1,7 +1,6 @@
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-
 }
 
 /* Carousel */
@@ -12,6 +11,7 @@
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
+    width: 100%;
     width: 100%;
 }
 
@@ -27,9 +27,9 @@
 /*Tunnz edits*/
 /* General Css*/
 
-.light-content{
+
+.light-content {
     color: white;
-    margin-left: 5%;
 }
 
 .light-section {
@@ -44,58 +44,283 @@
     color: antiquewhite;
 }
 
-.heading-inverse {
-    font-size: 2.2em;
-    text-align: center;
+div.padman {
+    padding: 5em;
+    padding-bottom: 3em;
+}
+
+div.padkid{
+    padding: 2em;
+    padding-bottom: 0.7em;
+}
+
+#section1 {
     color: antiquewhite;
-}
-
-/*Section Wise*/
-
-
-/*Footer*/
-footer_center{
     text-align: center;
-}
-
-#section1{
-    color:antiquewhite;
-    text-align:center;
-    height: 80vh;
     font-size: 3.5em;
 }
 
-#section2{
+#section2 {
     margin-top: 10vh;
 }
 
-.blackbar{
+
+/*Section Wise*/
+/*Navbar*/
+
+#mainbartop{
+    background-color: #444444;
+}
+
+.submit-project{
+    margin-left: 38%;
+}
+
+@media only screen and (min-width: 951px) {
+    .navigator{
+        margin-left: 25px;
+    }
+}
+
+/*Landing*/
+#section1{
+    height: 90vh;
+    background: url(../images/_DSC7107.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.70;
+}
+
+#sexy-tagline{
+    margin: 20% auto;
+    font-weight:bolder;
+    color: #FFFFFF;
+}
+
+.animate{
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+}
+
+@keyframes rollIn {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.rollIn {
+    animation-name: rollIn;
+    -webkit-animation-name: rollIn;
+    -o-animation-name: rollIn;
+}
+
+/*Team*/
+img.profpic {
+    height: 200px;
+    width: 200px;
+}
+
+div.label1{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+/*Interested*/
+
+.blackbar {
     font-size: 1.5em;
     color: antiquewhite;
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
-#barbtn{
+/*Footer*/
+footer_center {
+    text-align: center;
+}
+
+.footer-section {
+    background-color: #444444 !important;
+    padding-top: 2.5em;
+    padding-bottom: 0.2em;
+}
+
+.footer-heading{
+    color: antiquewhite;
+}
+
+#barbtn {
     padding-left: 1.5em;
     padding-right: 1.5em;
     margin-bottom: 1em;
     margin-top: 1em;
 }
 
-#blogbtn{
-    margin-top: 1em;
+div.border-right{
+    border-right: 2px solid grey;
 }
 
 
+.socia-ico ul {
+    margin: 1em;
+    padding-left: 0px;
+}
+
+    .socia-ico ul li {
+        list-style: none;
+        display: inline;
+        font-size: 3em;
+        margin: 0.45em;
+        line-height: 1px; 
+    }
+
+#form {
+    position: relative;
+    width: 95%;
+}
+
+input {
+    font-size: 0.875em;
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #FFB902;
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+    input:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #FFB902;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px #b3aca7;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+    textarea:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+
+#submit {
+    width: 100%;
+    padding: 0;
+    margin: -3px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #FFB902;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+    #submit:hover {
+        color: #e2dedb;
+    }
+
+img.footer-logo {
+    box-sizing: content-box;
+    padding: 1.5em;
+    margin-top: 15%;
+    max-height:100px;
+}
+
 /*Media queries*/
+
+
+@media screen and (max-width: 1150px) {
+    div.padman {
+        padding: 1em;
+        padding-bottom: 0.2em;
+    }
+
+    div.padkid {
+        padding: 0.5em;
+        padding-bottom: 0.1em;
+    }
+
+    .submit-project {
+        margin-left: 20%;
+    }
+
+    .socia-ico ul {
+        margin: 0.7em;
+        padding-left: 0px;
+    }
+
+        .socia-ico ul li {
+            list-style: none;
+            display: inline;
+            font-size: 3em;
+            margin: 0.5em;
+            line-height: 1px;
+        }
+}
+
+
 @media screen and (max-width: 950px) {
     #barbtn {
         margin-left: 30%;
         margin-top: 0.2em;
     }
-    .blackbar{
-        padding-left:1em;
-        text-align:center;
+
+    .blackbar {
+        padding-left: 1em;
+        text-align: center;
     }
+    
+    .submit-project {
+        margin-left: 0px;
+    }
+
+
+    .socia-ico ul {
+        margin: 0em;
+        padding-left: 0px;
+    }
+
+        .socia-ico ul li {
+            list-style: none;
+            display: inline;
+            font-size: 3em;
+            margin: 0em;
+            line-height: 1px;
+        }
 }
+
