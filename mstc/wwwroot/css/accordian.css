@@ -1,0 +1,140 @@
+﻿.accordion {
+    width: 100%;
+    max-width: 1500px;
+    height: 500px;
+    overflow: hidden;
+    margin-top:10px;
+    margin-bottom:-16px;
+}
+
+    .accordion ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+        .accordion ul li {
+            display: table-cell;
+            vertical-align: bottom;
+            position: relative;
+            width: 6.666%;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 500ms ease;
+        }
+
+            .accordion ul li div {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+            }
+
+                .accordion ul li div a {
+                    display: block;
+                    height: 500px;
+                    width: 100%;
+                    position: relative;
+                    z-index: 3;
+                    vertical-align: bottom;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: Open Sans, sans-serif;
+                    transition: all 200ms ease;
+                }
+
+                    .accordion ul li div a * {
+                        opacity: 0;
+                        margin: 0;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        position: relative;
+                        z-index: 5;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        -webkit-transform: translateX(-20px);
+                        transform: translateX(-20px);
+                        -webkit-transition: all 400ms ease;
+                        transition: all 400ms ease;
+                    }
+
+                    .accordion ul li div a h2 {
+                        text-overflow: clip;
+                        font-size: 3em;
+                        text-transform: uppercase;
+                        text-align:center;
+                        margin: 10px auto;
+                        top: 35%;
+                    }
+
+                    .accordion ul li div a p {
+                        top: 40%;
+                        text-align:center;
+                        margin: 10px auto;
+                        font-size: 1.6em;
+                    }
+
+            .accordion ul li:nth-child(1) {
+                background-image: url('../images/custom – 1.png');
+                background-size: cover;
+            }
+
+            .accordion ul li:nth-child(2) {
+                background-image: url('../images/custom – 2.png');
+                background-size: cover;
+            }
+
+            .accordion ul li:nth-child(3) {
+                background-image: url('../images/custom – 3.png');
+                background-size: cover;
+            }
+
+            .accordion ul li:nth-child(4) {
+                background-image: url('../images/custom – 4.png');
+                background-size: cover;
+            }
+
+        .accordion ul:hover li {
+            width: 8%;
+        }
+
+            .accordion ul:hover li:hover {
+                width: 80%;
+            }
+
+                .accordion ul:hover li:hover a {
+                    background: rgba(0, 0, 0, 0.4);
+                }
+
+                    .accordion ul:hover li:hover a * {
+                        opacity: 1;
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+
+@media screen and (max-width: 900px) {
+
+    body {
+        margin: 0;
+    }
+
+    .accordion {
+        height: auto;
+    }
+
+        .accordion ul li,
+        .accordion ul li:hover,
+        .accordion ul:hover li,
+        .accordion ul:hover li:hover {
+            position: relative;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            -webkit-transition: none;
+            transition: none;
+        }
+}

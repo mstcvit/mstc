@@ -23,6 +23,9 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:54192/"
+    },
+    "all": {
+      "commandName": "IISExpress"
     }
   }
 }
