@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net.Mail;
-
+using System.Net;
 
 namespace mstc.Pages
 {
@@ -55,6 +55,8 @@ namespace mstc.Pages
 
                 using (var smtpClient = new SmtpClient("smtp-mail.outlook.com"))
                 {
+                    smtpClient.UseDefaultCredentials = false;
+                    smtpClient.Credentials = new NetworkCredential("userName","Password","Domain");
                     smtpClient.Send(message);
                 }
             }
