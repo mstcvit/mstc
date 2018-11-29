@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Net.Mail;
-
 
 namespace mstc.Pages
 {
-
-    public class indexModel : PageModel
+    public class _ContactFormViewModel : PageModel
     {
         [BindProperty]
         public ContactFormModel Contact { get; set; }
@@ -61,17 +59,16 @@ namespace mstc.Pages
         }
     }
 
-    public class ContactFormModel
+    //public class ContactFormModel
 
-    {
-        [Required]
-        public string Name { get; set; }
+    //{
+    //    [Required]
+    //    public string Name { get; set; }
 
-        [Required]
-        public string Email { get; set; }
+    //    [Required]
+    //    public string Email { get; set; }
 
-        [Required]
-        public string Message { get; set; }
-    }
-
+    //    [Required]
+    //    public string Message { get; set; }
+    //}
 }
