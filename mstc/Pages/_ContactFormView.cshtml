@@ -1,0 +1,11 @@
+﻿@model mstc.Pages._ContactFormViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div asp-validation-summary="All"></div>
+<input asp-for="Contact.Name" id="Name" type="text" placeholder="NAME">
+<input asp-for="Contact.Email" id="Email" type="email" placeholder="E-MAIL">
+<textarea asp-for="Contact.Message" id="Message" placeholder="MESSAGE"></textarea>
+<input id="submit" type="submit" name="Submit">

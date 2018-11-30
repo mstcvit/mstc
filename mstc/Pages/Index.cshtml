@@ -1,4 +1,5 @@
 ﻿@page
+@model indexModel
 @{
     ViewData["Title"] = "Home page";
 }
@@ -129,3 +130,49 @@
         </div>
     </div>
 </div>
+
+
+
+<footer>
+    <div class="container-fluid footer-section">
+        <div class="row">
+            <div class="col-sm-4 border-right text-center">
+                <img src="~/images/mstc_white.png" class="img-fluid align-middle footer-logo" />
+            </div>
+            <div class="col-sm-4 text-center socia-ico border-right">
+                <h3 class="footer-heading">Stay Updated</h3>
+                <ul style="margin-top: 15%;">
+                    <li><i class="fab fa-github-square"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                </ul>
+                <ul>
+                    <li style="font-size: 0.88em; color:white;"><i>@@mstcvit</i></li>
+                    <li style="font-size: 0.88em; color:white;"><i>@@micvitvellore</i></li>
+                    <li style="font-size: 0.88em; color:white;"><i>@@mstcvit</i></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h3 class="footer-heading">Contact Us</h3>
+                <div class="padkid">
+                    <form id="form" class="topBefore" method="post">
+                        @*<partial name="_ContactFormView.cshtml" model=" new _ContactFormViewModel()" />*@
+                        <div asp-validation-summary="All"></div>
+
+                        <input asp-for="Contact.Name" id="Name" type="text" placeholder="NAME">
+                        <input asp-for="Contact.Email" id="Email" type="email" placeholder="E-MAIL">
+                        <textarea asp-for="Contact.Message" id="Message" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" name="Submit">
+                    </form>
+
+                    @*@{ Html.RenderPartial("_ContactFormView", new _ContactFormViewModel());}*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center light-content">
+                <p>&copy;2018 - Microsoft Student Technical Commuinty - VIT Vellore</p>
+            </div>
+        </div>
+    </div>
+</footer>
