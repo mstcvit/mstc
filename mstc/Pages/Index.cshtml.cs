@@ -46,17 +46,19 @@ namespace mstc.Pages
 
         private void SendMail(string mailbody)
         {
-            using (var message = new MailMessage(Contact.Email, "mstcvit@outlook.com"))
+            using (var message = new MailMessage("mstcvit@outlook.com", "mstcvit@outlook.com"))
             {
                 message.To.Add(new MailAddress("mstcvit@outlook.com"));
-                message.From = new MailAddress(Contact.Email);
                 message.Subject = "MSTC - Contact Form";
                 message.Body = mailbody;
 
-                using (var smtpClient = new SmtpClient("smtp-mail.outlook.com"))
+                using (var smtpClient = new SmtpClient("smtp.office365.com"))
                 {
                     smtpClient.UseDefaultCredentials = false;
-                    smtpClient.Credentials = new NetworkCredential("userName","Password","Domain");
+                    smtpClient.Credentials = new NetworkCredential("UserName","Password"); //MSTC account username and password
+                    smtpClient.Port = 587; //587, 465, 25 are common smtp ports
+                    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtpClient.EnableSsl = true;
                     smtpClient.Send(message);
                 }
             }
@@ -70,6 +72,7 @@ namespace mstc.Pages
         public string Name { get; set; }
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
